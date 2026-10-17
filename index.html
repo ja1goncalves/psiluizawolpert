@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luiza Wolpert | Psicóloga Clínica CRP 02/31623 — TCC & Saúde Emocional</title>
+  <meta name="description" content="Psicóloga Clínica Ana Luiza Wolpert Alves (CRP 02/31623). Atendimento psicológico on-line para adolescentes e adultos em Terapia Cognitivo-Comportamental (TCC) e presencial infantil em Camaragibe/Recife - PE." />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-bg: #FDF8FF;
+      --brand-surface: #FFFFFF;
+      --brand-surface-soft: #FAF5FC;
+      --brand-ink: #272727;
+      --brand-muted: #52525B;
+      --brand-border: #E4E4E7;
+      --brand-frame: #272727;
+      --brand-primary: #48B295;
+      --brand-primary-soft: #B6EFE0;
+      --brand-primary-card: #A7D4C7;
+      --brand-primary-dark: #1F6350;
+      --brand-secondary: #C578DF;
+      --brand-secondary-soft: #E0BDE6;
+      --brand-accent: #F08294;
+      --brand-accent-soft: #FCC9CB;
+      --dim-opacity: 0;
+    }
+    [data-theme="roxo"] {
+      --brand-primary: #A864C4;
+      --brand-primary-soft: #E0BDE6;
+      --brand-primary-card: #DBB5E2;
+      --brand-primary-dark: #5B2C73;
+      --brand-secondary: #48B295;
+      --brand-secondary-soft: #B6EFE0;
+    }
+    [data-theme="rosa"] {
+      --brand-primary: #D96B7D;
+      --brand-primary-soft: #FCC9CB;
+      --brand-primary-card: #E4B7BF;
+      --brand-primary-dark: #7D2938;
+      --brand-secondary: #A864C4;
+      --brand-secondary-soft: #E0BDE6;
+    }
+
+    /* Modo Escuro (Dark Mode) Combinável com Qualquer Paleta (Verde, Lilás, Rosa) */
+    body[data-dark="true"] {
+      --brand-bg: #111318;
+      --brand-surface: #1B1E26;
+      --brand-surface-soft: #232732;
+      --brand-ink: #F3F4F6;
+      --brand-muted: #A1A8B8;
+      --brand-border: #2E3443;
+      --brand-frame: #3E4556;
+      --brand-primary: #56C5A7;
+      --brand-primary-soft: #1D3B34;
+      --brand-primary-card: #19302B;
+      --brand-primary-dark: #3B9B81;
+      --brand-secondary-soft: #2C2136;
+    }
+    body[data-dark="true"][data-theme="roxo"] {
+      --brand-primary: #C583E0;
+      --brand-primary-soft: #332240;
+      --brand-primary-card: #2A1C36;
+      --brand-primary-dark: #8B4TA6;
+      --brand-primary-dark: #8C4DA8;
+      --brand-secondary-soft: #1D3B34;
+    }
+    body[data-dark="true"][data-theme="rosa"] {
+      --brand-primary: #EC8697;
+      --brand-primary-soft: #3E2129;
+      --brand-primary-card: #341C23;
+      --brand-primary-dark: #B54B5D;
+      --brand-secondary-soft: #332240;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--brand-bg);
+      color: var(--brand-ink);
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    }
+    .brand-stipple {
+      background-color: var(--brand-bg);
+      background-image:
+        radial-gradient(var(--brand-primary-soft) 1.35px, transparent 1.35px),
+        radial-gradient(var(--brand-secondary-soft) 1.1px, var(--brand-bg) 1.1px);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+      transition: background-color 0.3s ease;
+    }
+    .brand-card-surface {
+      background-color: var(--brand-primary-card);
+      transition: background-color 0.3s ease;
+    }
+    .brand-pill {
+      background-color: var(--brand-primary-soft);
+      color: var(--brand-primary-dark);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    body[data-dark="true"] .brand-pill {
+      color: #F3F4F6;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .brand-btn {
+      background-color: var(--brand-primary-dark);
+      color: #FFFFFF;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .brand-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px -6px rgba(0, 0, 0, 0.32);
+      filter: brightness(1.08);
+    }
+    .brand-outline-btn {
+      border: 2px solid var(--brand-frame);
+      color: var(--brand-ink);
+      background-color: var(--brand-surface);
+      transition: all 0.2s ease;
+    }
+    .brand-outline-btn:hover {
+      background-color: var(--brand-primary-soft);
+      transform: translateY(-1px);
+    }
+    .brand-underline {
+      text-decoration: underline;
+      text-decoration-color: var(--brand-primary);
+      text-decoration-thickness: 4px;
+      text-underline-offset: 4px;
+    }
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+    .transform-style-3d {
+      transform-style: preserve-3d;
+      transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1);
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+    .rotate-y-180 {
+      transform: rotateY(180deg);
+    }
+    .sticker-shadow {
+      filter: drop-shadow(0 8px 18px rgba(39, 39, 39, 0.14));
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .sticker-shadow:hover {
+      transform: scale(1.04) rotate(-1deg);
+      filter: drop-shadow(0 12px 24px rgba(39, 39, 39, 0.22));
+    }
+    .hotspot-active {
+      outline: 3px solid var(--brand-primary);
+      outline-offset: 4px;
+      border-radius: 1rem;
+      background-color: rgba(255, 255, 255, 0.78);
+    }
+    body[data-dark="true"] .hotspot-active {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+    .breath-circle {
+      transition: transform 1s ease-in-out, background-color 1s ease;
+    }
+
+    /* Adaptações Globais de Superfícies e Textos para Modo Escuro */
+    body[data-dark="true"] header {
+      background-color: rgba(17, 19, 24, 0.92) !important;
+      border-color: #2E3443 !important;
+    }
+    body[data-dark="true"] .bg-white {
+      background-color: var(--brand-surface) !important;
+    }
+    body[data-dark="true"] .bg-white\/95,
+    body[data-dark="true"] .bg-white\/90,
+    body[data-dark="true"] .bg-white\/85,
+    body[data-dark="true"] .bg-white\/80,
+    body[data-dark="true"] .bg-white\/70,
+    body[data-dark="true"] .bg-white\/60 {
+      background-color: rgba(27, 30, 38, 0.88) !important;
+    }
+    body[data-dark="true"] .bg-\[\#FDF8FF\] {
+      background-color: var(--brand-bg) !important;
+    }
+    body[data-dark="true"] .bg-neutral-50,
+    body[data-dark="true"] .bg-neutral-100 {
+      background-color: var(--brand-surface-soft) !important;
+    }
+    body[data-dark="true"] .bg-neutral-200 {
+      background-color: #2E3443 !important;
+    }
+    body[data-dark="true"] .text-\[\#272727\],
+    body[data-dark="true"] .text-neutral-800 {
+      color: var(--brand-ink) !important;
+    }
+    body[data-dark="true"] .text-neutral-700,
+    body[data-dark="true"] .text-neutral-600 {
+      color: var(--brand-muted) !important;
+    }
+    body[data-dark="true"] .text-neutral-500 {
+      color: #8E96AA !important;
+    }
+    body[data-dark="true"] .text-\[\#1F6350\] {
+      color: #6EE7B7 !important;
+    }
+    body[data-dark="true"] .text-purple-800 {
+      color: #D8B4FE !important;
+    }
+    body[data-dark="true"] .text-rose-800 {
+      color: #FDA4AF !important;
+    }
+    body[data-dark="true"] .border-neutral-200,
+    body[data-dark="true"] .border-neutral-200\/90,
+    body[data-dark="true"] .border-neutral-200\/80,
+    body[data-dark="true"] .border-neutral-200\/70,
+    body[data-dark="true"] .border-neutral-300,
+    body[data-dark="true"] .border-\[\#DBB5E2\] {
+      border-color: var(--brand-border) !important;
+    }
+    body[data-dark="true"] .border-\[\#272727\] {
+      border-color: var(--brand-frame) !important;
+    }
+    body[data-dark="true"] .shadow-\[8px_8px_0px_\#272727\] {
+      box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.55) !important;
+    }
+    body[data-dark="true"] .shadow-\[6px_6px_0px_\#272727\] {
+      box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.55) !important;
+    }
+    body[data-dark="true"] input,
+    body[data-dark="true"] select {
+      background-color: #14171F !important;
+      color: #F3F4F6 !important;
+      border-color: #383F52 !important;
+    }
+    /* Estados ativos de botões de filtro e abas */
+    .ui-tab-active {
+      background-color: var(--brand-primary-dark) !important;
+      color: #FFFFFF !important;
+      border-color: var(--brand-primary) !important;
+    }
+    .ui-chip-selected {
+      background-color: var(--brand-primary-soft) !important;
+      color: var(--brand-ink) !important;
+      border: 2px solid var(--brand-primary) !important;
+    }
+
+    /* Camada de Escurecimento Extra (Dimmer de Conforto Visual) */
+    #screenDimmerOverlay {
+      position: fixed;
+      inset: 0;
+      background-color: #000000;
+      opacity: var(--dim-opacity, 0);
+      pointer-events: none;
+      z-index: 9999;
+      transition: opacity 0.2s ease;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#B6EFE0] selection:text-[#272727]" data-theme="verde" data-dark="false">
+
+  <!-- Camada para controle fino de escurecimento da tela -->
+  <div id="screenDimmerOverlay" aria-hidden="true"></div>
+
+  <!-- Barra Superior de Identificação Clínica + Seletor de Tema e Escurecimento -->
+  <div class="bg-[#272727] text-white text-xs py-2.5 px-4 border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#B6EFE0] animate-pulse"></span>
+        <span class="font-medium">Psicóloga Clínica Ana Luiza Wolpert • <strong>CRP 02/31623</strong></span>
+        <span class="hidden xl:inline text-neutral-400">|</span>
+        <span class="hidden xl:inline text-neutral-300">On-line (Brasil e Exterior) & Presencial Infantil (Camaragibe/Recife - PE)</span>
+      </div>
+
+      <!-- Controles de Personalização Visual (Temas + Modo Escuro + Brilho) -->
+      <div class="flex flex-wrap items-center gap-3 ml-auto">
+        <!-- Escolha do Tema da Marca -->
+        <div class="flex items-center gap-2 bg-neutral-800/90 px-2.5 py-1 rounded-full border border-neutral-700">
+          <span class="text-[11px] text-neutral-300 font-medium">Tema:</span>
+          <button type="button" data-set-theme="verde" title="Tema Verde Menta" class="theme-dot-btn flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#A7D4C7] text-[#272727] font-bold text-[11px] ring-2 ring-white transition">
+            <span class="w-2 h-2 rounded-full bg-[#1F6350]"></span>
+            <span>Verde</span>
+          </button>
+          <button type="button" data-set-theme="roxo" title="Tema Lilás Acolhedor" class="theme-dot-btn flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#DBB5E2] text-[#272727] font-bold text-[11px] opacity-80 hover:opacity-100 transition">
+            <span class="w-2 h-2 rounded-full bg-[#5B2C73]"></span>
+            <span>Lilás</span>
+          </button>
+          <button type="button" data-set-theme="rosa" title="Tema Rosa Quartzo" class="theme-dot-btn flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#E4B7BF] text-[#272727] font-bold text-[11px] opacity-80 hover:opacity-100 transition">
+            <span class="w-2 h-2 rounded-full bg-[#7D2938]"></span>
+            <span>Rosa</span>
+          </button>
+        </div>
+
+        <!-- Botão de Modo Escuro & Controle de Escurecimento -->
+        <div class="flex items-center gap-2 bg-neutral-800/90 px-2.5 py-1 rounded-full border border-neutral-700">
+          <button type="button" id="darkModeToggleTop" class="flex items-center gap-1.5 text-[11px] font-bold text-white hover:text-[#B6EFE0] transition" title="Alternar entre Modo Claro e Modo Escuro">
+            <span id="darkModeIconTop">🌙</span>
+            <span id="darkModeLabelTop">Modo Escuro</span>
+          </button>
+          <span class="text-neutral-600">|</span>
+          <label for="dimmerRangeTop" class="flex items-center gap-1.5 text-[11px] text-neutral-300 cursor-pointer" title="Ajustar intensidade de escurecimento da tela">
+            <span>🔅</span>
+            <span class="hidden sm:inline">Escurecer:</span>
+            <input id="dimmerRangeTop" type="range" min="0" max="55" value="0" class="w-14 sm:w-16 h-1.5 bg-neutral-600 rounded-lg appearance-none cursor-pointer accent-[#B6EFE0]" />
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navegação Principal Fixa (Sticky) -->
+  <header class="sticky top-0 z-40 bg-[#FDF8FF]/90 backdrop-blur-md border-b border-neutral-200/80 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <a href="#inicio" class="flex items-center gap-3 group focus:outline-none">
+        <img src="./assets/Icone-Default.webp" alt="Ícone Luiza Wolpert" class="h-11 w-auto object-contain group-hover:rotate-6 transition-transform" />
+        <div>
+          <span class="block font-display font-bold text-lg leading-tight text-[#272727]">Luiza Wolpert</span>
+          <span class="block text-xs text-neutral-600 font-medium">Psicóloga • CRP 02/31623</span>
+        </div>
+      </a>
+
+      <!-- Links de Navegação Desktop -->
+      <nav class="hidden lg:flex items-center gap-5 text-sm font-medium text-neutral-700">
+        <a href="#inicio" class="hover:opacity-75 transition">Início</a>
+        <a href="#consultorio" class="hover:opacity-75 transition">Como Funciona</a>
+        <a href="#agendamento" class="hover:opacity-75 transition">Agendar Consulta</a>
+        <a href="#pausa" class="hover:opacity-75 transition">Momento de Pausa</a>
+        <a href="#sobre" class="hover:opacity-75 transition">Sobre & Formação</a>
+        <a href="#contato" class="hover:opacity-75 transition">Contatos & Cartão</a>
+        <a href="#faq" class="hover:opacity-75 transition">Dúvidas</a>
+      </nav>
+
+      <!-- Botões de Ação + Atalho Rápido de Modo Escuro no Header Fixo -->
+      <div class="flex items-center gap-2">
+        <button type="button" id="darkModeToggleNav" title="Escurecer / Clarear site" class="p-2.5 rounded-full border border-neutral-300 bg-white text-[#272727] hover:opacity-90 text-xs font-bold inline-flex items-center gap-1 transition">
+          <span id="darkModeIconNav">🌙</span>
+          <span id="darkModeLabelNav" class="hidden md:inline">Escurecer</span>
+        </button>
+        <a href="#agendamento" class="brand-btn px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold shadow-sm inline-flex items-center gap-1.5">
+          <span>💬</span>
+          <span>Agendar Consulta</span>
+        </a>
+        <button type="button" id="mobileMenuBtn" aria-label="Abrir menu" class="lg:hidden p-2 rounded-xl border border-neutral-200 bg-white text-neutral-800 hover:bg-neutral-100">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="mobileMenuPanel" class="hidden lg:hidden bg-white border-b border-neutral-200 px-4 pt-2 pb-4 space-y-2">
+      <div class="flex flex-wrap items-center justify-between gap-2 px-3 py-2 rounded-xl bg-neutral-100 mb-2">
+        <span class="text-xs font-bold text-[#272727]">Escolher Tema:</span>
+        <div class="flex items-center gap-1.5">
+          <button type="button" data-set-theme="verde" class="px-2.5 py-1 rounded-full bg-[#A7D4C7] text-[#272727] text-xs font-bold">Verde</button>
+          <button type="button" data-set-theme="roxo" class="px-2.5 py-1 rounded-full bg-[#DBB5E2] text-[#272727] text-xs font-bold">Lilás</button>
+          <button type="button" data-set-theme="rosa" class="px-2.5 py-1 rounded-full bg-[#E4B7BF] text-[#272727] text-xs font-bold">Rosa</button>
+        </div>
+      </div>
+      <a href="#inicio" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-neutral-100">Início</a>
+      <a href="#consultorio" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-neutral-100">Como Funciona a Terapia</a>
+      <a href="#agendamento" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-neutral-100">Triagem & Agendamento</a>
+      <a href="#pausa" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-neutral-100">Exercício de Respiração</a>
+      <a href="#sobre" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-neutral-100">Sobre Luiza & Formação</a>
+      <a href="#contato" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-neutral-100">Contatos & Cartão Digital</a>
+      <a href="#faq" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium hover:bg-neutral-100">Perguntas Frequentes</a>
+    </div>
+  </header>
+
+  <!-- SEÇÃO 1: INÍCIO / HERO -->
+  <section id="inicio" class="brand-stipple relative overflow-hidden py-12 sm:py-16 lg:py-20 border-b border-neutral-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+        
+        <!-- Coluna Esquerda: Apresentação e Chamadas -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-neutral-200 shadow-sm text-xs font-semibold text-neutral-800">
+            <span class="px-2 py-0.5 rounded-full brand-pill font-bold">CRP 02/31623</span>
+            <span>Terapia Cognitivo-Comportamental (TCC) & DBT</span>
+          </div>
+
+          <div class="space-y-3">
+            <img src="./assets/Logo-Default-Borda.webp" alt="Logotipo Luiza Wolpert Psicóloga" class="h-24 sm:h-28 w-auto object-contain" />
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#272727] leading-[1.15]">
+              Um espaço seguro para acolher sua história e construir <span class="brand-underline">novos caminhos</span>.
+            </h1>
+          </div>
+
+          <p class="text-base sm:text-lg text-neutral-700 leading-relaxed max-w-2xl">
+            Olá! Sou <strong>Ana Luiza Wolpert Alves</strong>, psicóloga clínica dedicada ao cuidado de transtornos de humor, ansiedade e personalidade em <strong>adolescentes e adultos</strong> (on-line), e ao acompanhamento clínico infantil com olhar individualizado e afetivo.
+          </p>
+
+          <!-- Destaques Rápidos -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+            <div class="bg-white/90 backdrop-blur rounded-2xl p-3.5 border border-neutral-200/90 shadow-sm flex items-center gap-3">
+              <img src="./assets/Destaques-Sobre.webp" alt="Ícone Sobre" class="w-11 h-11 rounded-full object-cover shrink-0" />
+              <div>
+                <div class="text-xs font-bold text-[#272727]">Abordagem Científica</div>
+                <div class="text-[11px] text-neutral-600">TCC (PUCRS) & Prática Clínica</div>
+              </div>
+            </div>
+            <div class="bg-white/90 backdrop-blur rounded-2xl p-3.5 border border-neutral-200/90 shadow-sm flex items-center gap-3">
+              <img src="./assets/Destaques-Contato.webp" alt="Ícone Contato" class="w-11 h-11 rounded-full object-cover shrink-0" />
+              <div>
+                <div class="text-xs font-bold text-[#272727]">Escuta Acolhedora</div>
+                <div class="text-[11px] text-neutral-600">Adolescentes, Adultos & Infantil</div>
+              </div>
+            </div>
+            <div class="bg-white/90 backdrop-blur rounded-2xl p-3.5 border border-neutral-200/90 shadow-sm flex items-center gap-3">
+              <img src="./assets/Destaques-Localizacao.webp" alt="Ícone Localização" class="w-11 h-11 rounded-full object-cover shrink-0" />
+              <div>
+                <div class="text-xs font-bold text-[#272727]">On-line & Presencial</div>
+                <div class="text-[11px] text-neutral-600">Google Meet & Camaragibe/Recife</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botões Principais -->
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#agendamento" class="brand-btn px-6 py-3.5 rounded-2xl text-sm sm:text-base font-bold inline-flex items-center gap-2 shadow-md">
+              <span>✨ Agendar Consulta pelo WhatsApp</span>
+            </a>
+            <a href="#consultorio" class="brand-outline-btn px-5 py-3.5 rounded-2xl text-sm sm:text-base font-semibold inline-flex items-center gap-2">
+              <span>🛋️ Conhecer o Espaço Terapêutico</span>
+            </a>
+          </div>
+
+          <!-- Faixa de Contato Direto -->
+          <div class="pt-2 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs sm:text-sm text-neutral-700">
+            <a href="https://wa.me/5581994740304" target="_blank" rel="noopener noreferrer" class="hover:underline font-medium flex items-center gap-1.5">
+              <span>📞</span> <span>(81) 99474-0304</span>
+            </a>
+            <a href="https://www.instagram.com/psiluizawolpertt/" target="_blank" rel="noopener noreferrer" class="hover:underline font-medium flex items-center gap-1.5">
+              <span>📸</span> <span>@psiluizawolpertt</span>
+            </a>
+            <a href="mailto:luizawolpert13@gmail.com" class="hover:underline font-medium flex items-center gap-1.5">
+              <span>✉️</span> <span>luizawolpert13@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna Direita: Retrato Interativo (Foto Real / Ilustração / Com Gatinho) -->
+        <div class="lg:col-span-5 flex flex-col items-center">
+          <div class="relative w-full max-w-md">
+            <div class="brand-card-surface rounded-[2.25rem] p-5 sm:p-7 border-2 border-[#272727] shadow-[8px_8px_0px_#272727] relative overflow-hidden transition-colors duration-300">
+              
+              <div class="flex items-center justify-between mb-3 relative z-10">
+                <span id="portraitModeBadge" class="px-3 py-1 rounded-full bg-white/95 border border-[#272727] text-xs font-bold text-[#272727] shadow-sm">
+                  ✨ Psicoterapia Individual & Acolhimento
+                </span>
+                <img src="./assets/Iniciais-Icone-Default.webp" alt="LW Iniciais" class="h-8 w-auto object-contain" />
+              </div>
+
+              <div class="relative h-80 sm:h-96 flex items-end justify-center bg-white/60 rounded-3xl border border-[#272727]/15 overflow-hidden p-2">
+                <img id="heroPortraitImg" src="./assets/Luiza-Real-Brilho-Borda.webp" alt="Psicóloga Luiza Wolpert" class="max-h-full w-auto object-contain sticker-shadow transition-all duration-300" />
+                
+                <img src="./assets/Flores-Default.webp" alt="Vaso de Flores" class="w-16 sm:w-20 h-auto object-contain absolute bottom-2 left-2 sticker-shadow pointer-events-none" />
+                <img src="./assets/Gato-Deitado-Default.webp" alt="Gatinho Ilustrado" class="w-14 sm:w-16 h-auto object-contain absolute bottom-2 right-3 sticker-shadow pointer-events-none" />
+              </div>
+
+              <!-- Alternador de Estilo do Retrato -->
+              <div class="mt-4 bg-white/95 rounded-2xl p-2 border border-[#272727]/20 flex items-center justify-between gap-1.5">
+                <button type="button" data-portrait="real" class="portrait-switch-btn ui-tab-active flex-1 py-2 px-2.5 rounded-xl text-xs font-bold transition">
+                  📷 Foto Real
+                </button>
+                <button type="button" data-portrait="ilustra" class="portrait-switch-btn flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-[#272727] hover:bg-neutral-100 transition">
+                  🎨 Ilustração
+                </button>
+                <button type="button" data-portrait="avatar" class="portrait-switch-btn flex-1 py-2 px-2.5 rounded-xl text-xs font-bold text-[#272727] hover:bg-neutral-100 transition">
+                  🐾 Com Gatinho
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: CONSULTÓRIO VIRTUAL INTERATIVO -->
+  <section id="consultorio" class="py-16 sm:py-20 bg-white border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="brand-pill px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Conhecendo o Processo Terapêutico</span>
+        <h2 class="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#272727]">
+          Explore o Consultório Virtual da Luiza
+        </h2>
+        <p class="mt-2 text-sm sm:text-base text-neutral-600">
+          Cada cantinho deste espaço representa um pilar do cuidado com a sua saúde emocional. <strong>Toque nos elementos abaixo</strong> para descobrir como funciona a terapia na prática:
+        </p>
+      </div>
+
+      <!-- Botões de Filtro dos Elementos do Consultório -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+        <button type="button" data-room-item="sofa" class="room-tab-btn ui-tab-active px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-sm transition">
+          🛋️ 1. O Divã / Escuta
+        </button>
+        <button type="button" data-room-item="estante" class="room-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-neutral-100 text-neutral-800 hover:bg-neutral-200 transition">
+          📚 2. A Estante (TCC & Ciência)
+        </button>
+        <button type="button" data-room-item="janela" class="room-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-neutral-100 text-neutral-800 hover:bg-neutral-200 transition">
+          🪟 3. A Janela (Terapia On-line)
+        </button>
+        <button type="button" data-room-item="espelho" class="room-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-neutral-100 text-neutral-800 hover:bg-neutral-200 transition">
+          🪞 4. O Espelho (Autoconhecimento)
+        </button>
+        <button type="button" data-room-item="flores" class="room-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-neutral-100 text-neutral-800 hover:bg-neutral-200 transition">
+          🌹 5. As Flores (Autocuidado)
+        </button>
+        <button type="button" data-room-item="gatos" class="room-tab-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-neutral-100 text-neutral-800 hover:bg-neutral-200 transition">
+          🐱 6. Os Gatinhos (Aconchego)
+        </button>
+      </div>
+
+      <!-- Cenário Interativo + Painel de Explicação -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Esquerda: Cenário Ilustrado Clicável -->
+        <div class="lg:col-span-7 brand-stipple rounded-3xl border-2 border-[#272727] p-5 sm:p-6 shadow-[6px_6px_0px_#272727] flex flex-col justify-between">
+          <div class="flex items-center justify-between text-xs font-semibold text-neutral-700 mb-4 bg-white/85 px-3.5 py-2 rounded-xl border border-neutral-200">
+            <span>👆 Toque em qualquer elemento do ambiente para conhecer</span>
+            <span id="roomClickCounter" class="font-bold text-[#1F6350]">1/6 explorados</span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 items-center justify-items-center my-auto py-2">
+            
+            <!-- Janela -->
+            <button type="button" data-room-item="janela" class="room-hotspot group p-3 rounded-2xl transition flex flex-col items-center text-center focus:outline-none">
+              <img src="./assets/Janela-Default.webp" alt="Janela Ilustrada" class="h-32 sm:h-36 w-auto object-contain sticker-shadow" />
+              <span class="mt-2 text-xs font-bold text-[#272727] bg-white/90 px-2.5 py-1 rounded-full border border-neutral-300">🪟 Janela & Horizonte</span>
+            </button>
+
+            <!-- Estante -->
+            <button type="button" data-room-item="estante" class="room-hotspot group p-3 rounded-2xl transition flex flex-col items-center text-center focus:outline-none">
+              <img src="./assets/Estante-Default.webp" alt="Estante Ilustrada" class="h-32 sm:h-36 w-auto object-contain sticker-shadow" />
+              <span class="mt-2 text-xs font-bold text-[#272727] bg-white/90 px-2.5 py-1 rounded-full border border-neutral-300">📚 Estante Científica</span>
+            </button>
+
+            <!-- Espelho -->
+            <button type="button" data-room-item="espelho" class="room-hotspot group p-3 rounded-2xl transition flex flex-col items-center text-center focus:outline-none">
+              <img src="./assets/Espelho-Default.webp" alt="Espelho Ilustrado" class="h-32 sm:h-36 w-auto object-contain sticker-shadow" />
+              <span class="mt-2 text-xs font-bold text-[#272727] bg-white/90 px-2.5 py-1 rounded-full border border-neutral-300">🪞 Espelho Interno</span>
+            </button>
+
+            <!-- Sofá -->
+            <button type="button" data-room-item="sofa" class="room-hotspot hotspot-active col-span-2 sm:col-span-1 group p-3 rounded-2xl transition flex flex-col items-center text-center focus:outline-none">
+              <img src="./assets/Sofa-Default.webp" alt="Sofá Terapêutico" class="h-28 sm:h-32 w-auto object-contain sticker-shadow" />
+              <span class="mt-2 text-xs font-bold text-[#272727] bg-white/90 px-2.5 py-1 rounded-full border border-neutral-300">🛋️ Divã Acolhedor</span>
+            </button>
+
+            <!-- Flores -->
+            <button type="button" data-room-item="flores" class="room-hotspot group p-3 rounded-2xl transition flex flex-col items-center text-center focus:outline-none">
+              <img src="./assets/Flores-Default.webp" alt="Flores no Vaso" class="h-28 sm:h-32 w-auto object-contain sticker-shadow" />
+              <span class="mt-2 text-xs font-bold text-[#272727] bg-white/90 px-2.5 py-1 rounded-full border border-neutral-300">🌹 Vaso & Cuidado</span>
+            </button>
+
+            <!-- Gatinhos -->
+            <button type="button" data-room-item="gatos" class="room-hotspot group p-3 rounded-2xl transition flex flex-col items-center text-center focus:outline-none">
+              <img id="roomCatImg" src="./assets/Gato-Preguica-Default.webp" alt="Gatinho Espreguiçando" class="h-28 sm:h-32 w-auto object-contain sticker-shadow" />
+              <span class="mt-2 text-xs font-bold text-[#272727] bg-white/90 px-2.5 py-1 rounded-full border border-neutral-300">🐱 Gatinhos & Pausa</span>
+            </button>
+
+          </div>
+
+          <div class="mt-3 flex items-center justify-between text-xs text-neutral-600 bg-white/80 px-3.5 py-2 rounded-xl">
+            <span>Um ambiente pensado para o seu acolhimento e bem-estar</span>
+            <button type="button" id="cycleCatPoseBtn" class="font-bold text-[#272727] underline hover:opacity-80">
+              🐾 Fazer carinho no gatinho
+            </button>
+          </div>
+        </div>
+
+        <!-- Direita: Painel de Detalhes -->
+        <div class="lg:col-span-5 bg-[#FDF8FF] rounded-3xl border-2 border-[#272727] p-6 sm:p-8 shadow-[6px_6px_0px_#272727] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <span id="roomDetailTag" class="brand-pill px-3 py-1 rounded-full text-xs font-bold">
+                Pilar 1 • Acolhimento Clínico
+              </span>
+              <img id="roomDetailThumb" src="./assets/Sofa-Default.webp" alt="Elemento selecionado" class="h-12 w-auto object-contain" />
+            </div>
+
+            <h3 id="roomDetailTitle" class="text-2xl font-extrabold text-[#272727] leading-snug">
+              O Sofá Lilás: Um lugar onde você pode existir sem filtros
+            </h3>
+
+            <p id="roomDetailDesc" class="mt-3 text-sm sm:text-base text-neutral-700 leading-relaxed">
+              Na psicoterapia, o primeiro passo é construir uma aliança terapêutica segura. O sofá simboliza a escuta ativa, ética e livre de julgamentos, onde adolescentes e adultos encontram espaço para nomear angústias, compreender padrões emocionais e construir autonomia.
+            </p>
+
+            <div class="mt-5 bg-white rounded-2xl p-4 border border-neutral-200 space-y-2">
+              <div class="text-xs font-bold uppercase tracking-wider text-neutral-500">Como isso acontece nas consultas:</div>
+              <ul id="roomDetailBullets" class="space-y-2 text-xs sm:text-sm text-neutral-800">
+                <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold">✓</span> <span>Sessões individuais de 50 minutos com sigilo profissional absoluto (Código de Ética do Psicólogo).</span></li>
+                <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold">✓</span> <span>Ritmo respeitoso: você nunca é forçado(a) a falar sobre o que ainda não se sente pronto(a).</span></li>
+                <li class="flex items-start gap-2"><span class="text-emerald-600 font-bold">✓</span> <span>Metas terapêuticas construídas em conjunto desde os primeiros encontros.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-neutral-200 flex flex-wrap items-center justify-between gap-3">
+            <button type="button" id="nextRoomItemBtn" class="brand-outline-btn px-4 py-2.5 rounded-xl text-xs font-bold">
+              Próximo Pilar →
+            </button>
+            <a href="#agendamento" class="brand-btn px-4 py-2.5 rounded-xl text-xs font-bold">
+              Quero agendar minha sessão
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: TRIAGEM ACOLHEDORA & AGENDAMENTO DE CONSULTA -->
+  <section id="agendamento" class="py-16 sm:py-20 brand-stipple border-b border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="brand-pill px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Primeiro Passo • Atendimento On-line & Presencial</span>
+        <h2 class="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#272727]">
+          Triagem Acolhedora & Agendamento de Consulta
+        </h2>
+        <p class="mt-2 text-sm sm:text-base text-neutral-700">
+          Muitas vezes dar o primeiro "oi" no WhatsApp dá frio na barriga. Selecione abaixo o que faz sentido para o seu momento e <strong>preparamos sua mensagem de primeiro contato para enviar em 1 clique</strong>.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Esquerda: Seleção de Demanda e Horário -->
+        <div class="lg:col-span-7 bg-white rounded-3xl border-2 border-[#272727] p-6 sm:p-8 shadow-[6px_6px_0px_#272727] space-y-6">
+          
+          <!-- Passo 1: Público / Modalidade -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-2.5">
+              1. Para quem é o acompanhamento?
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              <button type="button" data-audience="Adulto (On-line)" class="audience-btn ui-chip-selected py-3 px-3.5 rounded-2xl text-left transition">
+                <div class="font-bold text-xs sm:text-sm text-[#272727]">🧑 Adulto</div>
+                <div class="text-[11px] text-neutral-700">On-line via Google Meet</div>
+              </button>
+              <button type="button" data-audience="Adolescente (On-line)" class="audience-btn py-3 px-3.5 rounded-2xl border border-neutral-300 bg-white hover:bg-neutral-50 text-left transition">
+                <div class="font-bold text-xs sm:text-sm text-[#272727]">🎧 Adolescente</div>
+                <div class="text-[11px] text-neutral-600">Acolhimento jovem</div>
+              </button>
+              <button type="button" data-audience="Infantil / TEA (Presencial)" class="audience-btn py-3 px-3.5 rounded-2xl border border-neutral-300 bg-white hover:bg-neutral-50 text-left transition">
+                <div class="font-bold text-xs sm:text-sm text-[#272727]">🧩 Infantil / TEA</div>
+                <div class="text-[11px] text-neutral-600">Clínica Elo Multiterapias</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Passo 2: Motivos / Demandas -->
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <label class="block text-xs font-bold uppercase tracking-wider text-neutral-500">
+                2. O que você gostaria de trabalhar na terapia? (Pode marcar vários)
+              </label>
+              <span id="selectedTopicsCount" class="text-xs font-bold text-[#1F6350]">1 selecionado</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button type="button" data-topic="Ansiedade, preocupações excessivas ou pânico" class="topic-chip ui-chip-selected px-3.5 py-2 rounded-xl text-xs font-semibold transition">
+                💭 Ansiedade, Pânico ou TOC
+              </button>
+              <button type="button" data-topic="Oscilações de humor, desânimo ou sobrecarga" class="topic-chip px-3.5 py-2 rounded-xl text-xs font-semibold border border-neutral-300 bg-neutral-50 text-neutral-800 hover:bg-neutral-100 transition">
+                🌧️ Transtornos de Humor / Desânimo
+              </button>
+              <button type="button" data-topic="Regulação emocional intensa e impulsividade (foco TCC/DBT)" class="topic-chip px-3.5 py-2 rounded-xl text-xs font-semibold border border-neutral-300 bg-neutral-50 text-neutral-800 hover:bg-neutral-100 transition">
+                🌊 Regulação Emocional & Personalidade
+              </button>
+              <button type="button" data-topic="Autoconhecimento, autoestima e imposição de limites" class="topic-chip px-3.5 py-2 rounded-xl text-xs font-semibold border border-neutral-300 bg-neutral-50 text-neutral-800 hover:bg-neutral-100 transition">
+                🪞 Autoestima & Relacionamentos
+              </button>
+              <button type="button" data-topic="Saúde emocional no trabalho, burnout e carreira" class="topic-chip px-3.5 py-2 rounded-xl text-xs font-semibold border border-neutral-300 bg-neutral-50 text-neutral-800 hover:bg-neutral-100 transition">
+                💼 Saúde Emocional no Trabalho
+              </button>
+              <button type="button" data-topic="Desenvolvimento infantil e suporte no espectro autista (TEA)" class="topic-chip px-3.5 py-2 rounded-xl text-xs font-semibold border border-neutral-300 bg-neutral-50 text-neutral-800 hover:bg-neutral-100 transition">
+                🧸 Desenvolvimento Infantil / Autismo
+              </button>
+              <button type="button" data-topic="Atendimento social acessível (PsyMeet / Instituto Entrelaçadas)" class="topic-chip px-3.5 py-2 rounded-xl text-xs font-semibold border border-neutral-300 bg-neutral-50 text-neutral-800 hover:bg-neutral-100 transition">
+                🤝 Valor Social / PsyMeet
+              </button>
+            </div>
+          </div>
+
+          <!-- Passo 3: Nome e Turno -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="patientNameInput" class="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-1.5">
+                3. Seu nome (opcional)
+              </label>
+              <input id="patientNameInput" type="text" placeholder="Ex.: Maria Clara" class="w-full px-3.5 py-2.5 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:border-[#272727]" />
+            </div>
+            <div>
+              <label for="shiftSelect" class="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-1.5">
+                4. Turno de preferência
+              </label>
+              <select id="shiftSelect" class="w-full px-3.5 py-2.5 rounded-xl border border-neutral-300 text-sm bg-white focus:outline-none focus:border-[#272727]">
+                <option value="Manhã">🌤️ Manhã (08h às 12h)</option>
+                <option value="Meio-dia / Almoço" selected>☀️ Horário de Almoço (12h às 14h)</option>
+                <option value="Tarde">⛅ Tarde (14h às 18h)</option>
+                <option value="Noite">🌙 Noite (18h às 21h)</option>
+                <option value="Flexível">🔄 Horário Flexível</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Nota de Orientação Terapêutica -->
+          <div id="triageAdviceBox" class="rounded-2xl bg-[#FDF8FF] border border-[#DBB5E2] p-4 flex items-start gap-3">
+            <img src="./assets/Foto-Ilustracao-Perfil01.webp" alt="Avatar Luiza" class="w-12 h-12 rounded-full object-cover border border-[#272727] shrink-0" />
+            <div class="text-xs sm:text-sm text-neutral-800 leading-relaxed">
+              <strong class="block text-[#272727] mb-0.5">Como a TCC pode te ajudar nesse foco:</strong>
+              <span id="triageAdviceText">Na Terapia Cognitivo-Comportamental, mapeamos os pensamentos automáticos e gatilhos de ansiedade com ferramentas práticas de regulação e reestruturação cognitiva.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Direita: Mensagem Pronta para WhatsApp e E-mail -->
+        <div class="lg:col-span-5 bg-[#272727] text-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between border border-neutral-700">
+          <div>
+            <div class="flex items-center justify-between gap-2 pb-4 border-b border-neutral-700">
+              <div class="flex items-center gap-2.5">
+                <img src="./assets/Foto-Real-Perfil01.webp" alt="Luiza Wolpert" class="w-11 h-11 rounded-full object-cover border-2 border-[#B6EFE0]" />
+                <div>
+                  <div class="font-bold text-sm text-white">Psi. Luiza Wolpert</div>
+                  <div class="text-[11px] text-[#B6EFE0]">WhatsApp • (81) 99474-0304</div>
+                </div>
+              </div>
+              <span class="text-[11px] bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded-full font-semibold">Atendimento</span>
+            </div>
+
+            <div class="mt-4">
+              <label for="whatsappPreviewText" class="block text-xs text-neutral-400 mb-2 font-medium">
+                Sua mensagem personalizada (você pode complementar como preferir):
+              </label>
+              <textarea id="whatsappPreviewText" rows="6" class="w-full rounded-2xl bg-neutral-800/90 border border-neutral-700 p-3.5 text-xs sm:text-sm text-neutral-100 leading-relaxed focus:outline-none focus:border-[#B6EFE0]"></textarea>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-2.5">
+            <a id="sendWhatsappBtn" href="https://wa.me/5581994740304" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-5 rounded-2xl bg-[#A7D4C7] hover:bg-[#B6EFE0] text-[#111318] font-extrabold text-sm flex items-center justify-center gap-2 transition shadow-lg">
+              <span>📲 Enviar Mensagem no WhatsApp</span>
+            </a>
+
+            <div class="grid grid-cols-2 gap-2">
+              <button type="button" id="copyMessageBtn" class="py-2.5 px-3 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-semibold text-neutral-200 transition">
+                📋 Copiar Texto
+              </button>
+              <a id="sendEmailBtn" href="mailto:luizawolpert13@gmail.com" class="py-2.5 px-3 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-xs font-semibold text-neutral-200 text-center transition">
+                ✉️ Enviar por E-mail
+              </a>
+            </div>
+
+            <p id="copyFeedbackToast" class="hidden text-center text-xs text-[#B6EFE0] font-semibold pt-1">
+              ✓ Mensagem copiada para a área de transferência!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: MOMENTO DE PAUSA — EXERCÍCIO DE RESPIRAÇÃO GUIADA -->
+  <section id="pausa" class="py-16 sm:py-20 bg-white border-b border-neutral-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="brand-card-surface rounded-[2.5rem] border-2 border-[#272727] p-6 sm:p-10 shadow-[8px_8px_0px_#272727]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-6 space-y-4">
+            <span class="bg-white/90 text-[#272727] border border-[#272727] px-3 py-1 rounded-full text-xs font-bold">
+              🧘‍♀️ Prática de Regulação Emocional (TCC)
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-[#272727]">
+              Precisa desacelerar agora? Faça uma pausa de 1 minuto.
+            </h2>
+            <p class="text-sm sm:text-base text-neutral-800 leading-relaxed">
+              A respiração diafragmática reduz a ativação fisiológica da ansiedade ao sinalizar segurança para o seu corpo. Acompanhe o ritmo visual ao lado:
+            </p>
+
+            <div class="flex flex-wrap gap-2 pt-1">
+              <button type="button" id="modeCalmBtn" data-breath-mode="446" class="ui-tab-active px-3.5 py-2 rounded-xl text-xs font-bold transition">
+                🌿 Calmaria 4-4-6 (Ansiedade)
+              </button>
+              <button type="button" id="modeBoxBtn" data-breath-mode="4444" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-white/80 text-[#272727] hover:bg-white transition">
+                ⏹️ Respiração Quadrada 4-4-4-4 (Foco)
+              </button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <button type="button" id="toggleBreathBtn" class="brand-btn px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold shadow-sm">
+                ▶️ Iniciar Respiração Guiada
+              </button>
+              <button type="button" id="toggleAudioBtn" class="bg-white/90 hover:bg-white text-[#272727] border border-[#272727] px-4 py-3 rounded-2xl text-xs font-bold transition">
+                🔔 Som Suave: Ativado
+              </button>
+              <span id="breathCyclesBadge" class="text-xs font-bold text-[#272727] bg-white/70 px-3 py-2 rounded-xl">
+                Ciclos concluídos: 0
+              </span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 flex flex-col items-center justify-center">
+            <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full bg-white/60 border-2 border-dashed border-[#272727]/40 flex items-center justify-center">
+              <div id="breathCircle" class="breath-circle w-44 h-44 rounded-full bg-white border-2 border-[#272727] shadow-md flex flex-col items-center justify-center p-4 text-center">
+                <img id="breathCatIcon" src="./assets/Gato-Lambendo-Default.webp" alt="Gatinho Respiração" class="h-20 w-auto object-contain mb-1" />
+                <span id="breathInstruction" class="font-display font-extrabold text-base text-[#272727]">Pronto para começar</span>
+                <span id="breathTimerText" class="text-xs font-semibold text-neutral-500">Toque em Iniciar</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: SOBRE LUIZA WOLPERT, FORMAÇÃO & EXPERIÊNCIA CLÍNICA -->
+  <section id="sobre" class="py-16 sm:py-20 bg-[#FDF8FF] border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Card de Perfil e Registro Profissional -->
+        <div class="lg:col-span-4 bg-white rounded-3xl border-2 border-[#272727] p-6 shadow-[6px_6px_0px_#272727] space-y-5">
+          <div class="relative rounded-2xl overflow-hidden bg-[#E0BDE6]/40 border border-neutral-200 pt-4 px-4 flex justify-center">
+            <img src="./assets/Luiza-Real-Default.webp" alt="Ana Luiza Wolpert Alves" class="h-64 w-auto object-contain" />
+          </div>
+
+          <div>
+            <h2 class="text-xl font-extrabold text-[#272727]">Ana Luiza Wolpert Alves</h2>
+            <p class="text-xs font-bold text-[#1F6350] mt-0.5">Psicóloga Clínica • CRP 02/31623</p>
+            <p class="text-xs text-neutral-600 mt-2 leading-relaxed">
+              Formada em Psicologia, pós-graduanda em Terapia Cognitivo-Comportamental (TCC) pela PUCRS e com estudos direcionados à Terapia Comportamental Dialética (DBT).
+            </p>
+          </div>
+
+          <div class="space-y-2 pt-2 border-t border-neutral-200 text-xs">
+            <div class="flex items-center justify-between">
+              <span class="text-neutral-500">Localização:</span>
+              <span class="font-semibold text-[#272727]">Camaragibe / Recife - PE</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-neutral-500">Idiomas:</span>
+              <span class="font-semibold text-[#272727]">Português (Nativo) • Inglês (Avançado)</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-neutral-500">Público:</span>
+              <span class="font-semibold text-[#272727]">Adolescentes, Adultos & Infantil</span>
+            </div>
+          </div>
+
+          <div class="pt-2 flex flex-col gap-2">
+            <a href="https://www.linkedin.com/in/luiza-wolpert-a967a7307/" target="_blank" rel="noopener noreferrer" class="brand-outline-btn py-2.5 px-4 rounded-xl text-xs font-bold text-center">
+              🔗 Ver Perfil no LinkedIn
+            </a>
+            <a href="https://www.instagram.com/psiluizawolpertt/" target="_blank" rel="noopener noreferrer" class="brand-btn py-2.5 px-4 rounded-xl text-xs font-bold text-center">
+              📸 Acompanhar no Instagram
+            </a>
+          </div>
+        </div>
+
+        <!-- Experiência Clínica & Capacitações -->
+        <div class="lg:col-span-8 space-y-8">
+          
+          <div>
+            <span class="brand-pill px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Trajetória Profissional</span>
+            <h3 class="mt-2 text-2xl sm:text-3xl font-extrabold text-[#272727]">
+              Experiência Clínica & Formação Acadêmica
+            </h3>
+            <p class="mt-1 text-sm text-neutral-600">
+              Prática pautada na ética, no respeito à singularidade e no aprendizado científico contínuo.
+            </p>
+          </div>
+
+          <!-- Cards de Experiência -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white rounded-2xl p-5 border border-neutral-200 shadow-sm">
+              <div class="flex items-center justify-between text-xs font-bold text-[#1F6350] mb-1">
+                <span>Jul 2025 – Atualmente</span>
+                <span class="brand-pill px-2 py-0.5 rounded-full">On-line</span>
+              </div>
+              <h4 class="font-bold text-base text-[#272727]">Psicologia Clínica Individual</h4>
+              <p class="text-xs font-semibold text-neutral-500 mb-2">
+                Consultório Particular • <a href="https://www.instagram.com/institutoentrelacadas/" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-80">Instituto Entrelaçadas</a> • <a href="https://www.psymeetsocial.com/" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-80">PsyMeet</a>
+              </p>
+              <p class="text-xs text-neutral-700 leading-relaxed">
+                Atendimento psicológico individual on-line para adolescentes e adultos, incluindo acolhimento ético a pessoas em vulnerabilidade social com intervenções baseadas em TCC.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5 border border-neutral-200 shadow-sm">
+              <div class="flex items-center justify-between text-xs font-bold text-purple-800 mb-1">
+                <span>Ago 2025 – Atualmente</span>
+                <span class="brand-pill px-2 py-0.5 rounded-full">Presencial</span>
+              </div>
+              <h4 class="font-bold text-base text-[#272727]">Atendimento Clínico Infantil (TEA)</h4>
+              <p class="text-xs font-semibold text-neutral-500 mb-2">
+                <a href="https://www.instagram.com/institutoelomultiterapias/" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-80">Clínica Elo Multiterapias</a>
+              </p>
+              <p class="text-xs text-neutral-700 leading-relaxed">
+                Psicóloga clínica no acompanhamento de crianças autistas (TEA), aplicando técnicas adaptadas às necessidades individuais de desenvolvimento e regulação.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5 border border-neutral-200 shadow-sm">
+              <div class="flex items-center justify-between text-xs font-bold text-rose-800 mb-1">
+                <span>Mar 2025 – Jul 2026</span>
+                <span class="brand-pill px-2 py-0.5 rounded-full">Pós-Graduação</span>
+              </div>
+              <h4 class="font-bold text-base text-[#272727]">Especialização em TCC</h4>
+              <p class="text-xs font-semibold text-neutral-500 mb-2">PUCRS (Pontifícia Universidade Católica do RS)</p>
+              <p class="text-xs text-neutral-700 leading-relaxed">
+                Pós-graduação lato sensu em Terapia Cognitivo-Comportamental, aprofundando protocolos para transtornos de humor, ansiedade e personalidade.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5 border border-neutral-200 shadow-sm">
+              <div class="flex items-center justify-between text-xs font-bold text-neutral-700 mb-1">
+                <span>2019 – 2024</span>
+                <span class="bg-neutral-200 px-2 py-0.5 rounded-full">Graduação</span>
+              </div>
+              <h4 class="font-bold text-base text-[#272727]">Bacharelado em Psicologia</h4>
+              <p class="text-xs font-semibold text-neutral-500 mb-2">UniSãoMiguel • Clínica Escola & Educação Infantil</p>
+              <p class="text-xs text-neutral-700 leading-relaxed">
+                Formação completa com estágios em clínica escola (estudos de caso e intervenções clínicas) e observação comportamental infantil.
+              </p>
+            </div>
+          </div>
+
+          <!-- Capacitações e Cursos Complementares -->
+          <div class="bg-white rounded-3xl p-6 border border-neutral-200 shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+              <h4 class="font-bold text-base text-[#272727]">🎓 Capacitações & Certificações Complementares</h4>
+              <div class="flex flex-wrap gap-1.5">
+                <button type="button" data-cert-filter="all" class="cert-filter-btn ui-tab-active px-3 py-1 rounded-full text-xs font-bold">Todas</button>
+                <button type="button" data-cert-filter="clinica" class="cert-filter-btn px-3 py-1 rounded-full text-xs font-bold bg-neutral-100 text-neutral-700 hover:bg-neutral-200">TCC & Psicopatologia</button>
+                <button type="button" data-cert-filter="crise" class="cert-filter-btn px-3 py-1 rounded-full text-xs font-bold bg-neutral-100 text-neutral-700 hover:bg-neutral-200">Jovens & Manejo de Crise</button>
+                <button type="button" data-cert-filter="organizacional" class="cert-filter-btn px-3 py-1 rounded-full text-xs font-bold bg-neutral-100 text-neutral-700 hover:bg-neutral-200">Saúde no Trabalho</button>
+              </div>
+            </div>
+
+            <div id="certListContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+              <div data-cert-cat="crise" class="cert-item p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                <div class="font-bold text-[#272727]">Saúde Mental e Atenção Psicossocial de Adolescentes e Jovens</div>
+                <div class="text-neutral-500 mt-0.5">UNICEF & UNA-SUS (2026)</div>
+              </div>
+              <div data-cert-cat="clinica" class="cert-item p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                <div class="font-bold text-[#272727]">Curso de Extensão em Psicopatologia (SEI/GOVPE)</div>
+                <div class="text-neutral-500 mt-0.5">Universidade de Pernambuco — UPE (2024/2025)</div>
+              </div>
+              <div data-cert-cat="clinica" class="cert-item p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                <div class="font-bold text-[#272727]">TCC e Transtornos Psiquiátricos: Principais Técnicas Interventivas</div>
+                <div class="text-neutral-500 mt-0.5">Instituto Fratelli (2024)</div>
+              </div>
+              <div data-cert-cat="clinica" class="cert-item p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                <div class="font-bold text-[#272727]">Avaliação e Intervenção em Ansiedade: TOC e Síndrome do Pânico</div>
+                <div class="text-neutral-500 mt-0.5">Instituto Fratelli (2024)</div>
+              </div>
+              <div data-cert-cat="clinica" class="cert-item p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                <div class="font-bold text-[#272727]">Psicopatologia e Cultura: Influências na Expressão dos Sintomas</div>
+                <div class="text-neutral-500 mt-0.5">Instituto Fratelli (2024)</div>
+              </div>
+              <div data-cert-cat="crise" class="cert-item p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                <div class="font-bold text-[#272727]">Grupo de Estudos e Seminário em Prevenção e Manejo de Crises</div>
+                <div class="text-neutral-500 mt-0.5">Instituto Fratelli, CENAT & UFPE LACCOS</div>
+              </div>
+              <div data-cert-cat="organizacional" class="cert-item p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                <div class="font-bold text-[#272727]">Comunicação, Saúde Emocional e Engajamento no Trabalho</div>
+                <div class="text-neutral-500 mt-0.5">PUCRS (2025)</div>
+              </div>
+              <div data-cert-cat="organizacional" class="cert-item p-3 rounded-xl bg-neutral-50 border border-neutral-200">
+                <div class="font-bold text-[#272727]">Liderança Positiva, Propósito de Vida e Gestão de Crise</div>
+                <div class="text-neutral-500 mt-0.5">PUCRS (2025–2026)</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6: CARTÃO DE VISITA DIGITAL & CANAIS DE CONTATO -->
+  <section id="contato" class="py-16 sm:py-20 bg-white border-b border-neutral-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="brand-pill px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Contato Rápido & Cartão Digital</span>
+        <h2 class="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#272727]">
+          Cartão de Visita & Canais de Atendimento
+        </h2>
+        <p class="mt-2 text-sm sm:text-base text-neutral-600">
+          Clique no cartão abaixo para <strong>girar entre frente e verso</strong> ou salvar o contato profissional da psicóloga Luiza Wolpert diretamente na agenda do seu celular.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Esquerda: Cartão de Visita Interativo 3D -->
+        <div class="lg:col-span-6 flex flex-col items-center">
+          
+          <div class="flex flex-wrap items-center justify-center gap-2 mb-4">
+            <button type="button" data-card-color="verde" class="card-color-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#A7D4C7] text-[#111318] ring-2 ring-[#272727]">
+              🌿 Verde
+            </button>
+            <button type="button" data-card-color="rosa" class="card-color-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#E4B7BF] text-[#111318]">
+              🌸 Rosa
+            </button>
+            <button type="button" data-card-color="roxo" class="card-color-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-[#DBB5E2] text-[#111318]">
+              💜 Lilás
+            </button>
+            <button type="button" id="flipCardBtn" class="px-4 py-1.5 rounded-full text-xs font-bold bg-[#272727] text-white hover:bg-neutral-800 transition">
+              🔄 Girar Cartão (Frente/Verso)
+            </button>
+          </div>
+
+          <!-- Cartão 3D -->
+          <div id="businessCard3DStage" class="w-full max-w-lg aspect-[600/354] perspective-1000 cursor-pointer" title="Clique para girar o cartão">
+            <div id="businessCardInner" class="relative w-full h-full transform-style-3d">
+              <div class="absolute inset-0 w-full h-full backface-hidden rounded-2xl overflow-hidden border-2 border-[#272727] shadow-xl">
+                <img id="cardFrontImg" src="./assets/Cartao-Verde-Frente.webp" alt="Frente do Cartão de Visita Luiza Wolpert" class="w-full h-full object-cover" />
+              </div>
+              <div class="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-2xl overflow-hidden border-2 border-[#272727] shadow-xl">
+                <img id="cardBackImg" src="./assets/Cartao-Verde-Verso.webp" alt="Verso do Cartão de Visita Luiza Wolpert" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+            <button type="button" id="downloadVcardBtn" class="brand-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold inline-flex items-center gap-2">
+              <span>📇 Salvar Contato na Agenda do Celular</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Direita: Credencial Digital & Canais Diretos -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="bg-[#FDF8FF] rounded-3xl p-5 sm:p-6 border border-neutral-200 shadow-sm">
+            <div class="text-xs font-bold uppercase tracking-wider text-neutral-500 mb-2">
+              Credencial Profissional • CRP 02/31623
+            </div>
+            <img src="./assets/Cartao-Email.webp" alt="Credencial Luiza Wolpert" class="w-full h-auto rounded-2xl border border-neutral-300 shadow-sm" />
+          </div>
+
+          <div class="bg-[#FDF8FF] rounded-3xl p-5 sm:p-6 border border-neutral-200 shadow-sm space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold uppercase tracking-wider text-neutral-500">
+                Canais de Contato & Locais de Atendimento
+              </span>
+              <span class="text-xs font-semibold text-[#1F6350]">Resposta acolhedora</span>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+              <a href="https://wa.me/5581994740304" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-2xl bg-white border border-neutral-200 hover:border-[#272727] transition flex items-center gap-3">
+                <span class="text-lg">💬</span>
+                <div>
+                  <div class="font-bold text-[#272727]">WhatsApp Clínico</div>
+                  <div class="text-neutral-600">(81) 99474-0304</div>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/psiluizawolpertt/" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-2xl bg-white border border-neutral-200 hover:border-[#272727] transition flex items-center gap-3">
+                <span class="text-lg">📸</span>
+                <div>
+                  <div class="font-bold text-[#272727]">Instagram</div>
+                  <div class="text-neutral-600">@psiluizawolpertt</div>
+                </div>
+              </a>
+              <a href="mailto:luizawolpert13@gmail.com" class="p-3.5 rounded-2xl bg-white border border-neutral-200 hover:border-[#272727] transition flex items-center gap-3">
+                <span class="text-lg">✉️</span>
+                <div>
+                  <div class="font-bold text-[#272727]">E-mail Profissional</div>
+                  <div class="text-neutral-600">luizawolpert13@gmail.com</div>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/institutoelomultiterapias/" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-2xl bg-white border border-neutral-200 hover:border-[#272727] transition flex items-center gap-3">
+                <span class="text-lg">📍</span>
+                <div>
+                  <div class="font-bold text-[#272727]">Presencial Infantil</div>
+                  <div class="text-neutral-600">Clínica Elo Multiterapias</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7: PERGUNTAS FREQUENTES (FAQ) -->
+  <section id="faq" class="py-16 sm:py-20 brand-stipple border-b border-neutral-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <span class="brand-pill px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Tire suas Dúvidas</span>
+        <h2 class="mt-3 text-2xl sm:text-3xl font-extrabold text-[#272727]">
+          Perguntas Frequentes sobre a Psicoterapia
+        </h2>
+      </div>
+
+      <div class="space-y-3" id="faqAccordion">
+        <div class="bg-white rounded-2xl border-2 border-[#272727] overflow-hidden">
+          <button type="button" data-faq-toggle="faq1" class="w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#272727] flex items-center justify-between">
+            <span>1. Como funciona a psicoterapia on-line? É tão eficaz quanto a presencial?</span>
+            <span id="icon-faq1" class="text-lg font-extrabold">−</span>
+          </button>
+          <div id="faq1" class="px-5 pb-4 text-xs sm:text-sm text-neutral-700 leading-relaxed">
+            Sim! A psicoterapia on-line é regulamentada pelo Conselho Federal de Psicologia (CFP) e possui a mesma eficácia clínica cientificamente comprovada na Terapia Cognitivo-Comportamental (TCC). As sessões ocorrem por videochamada (Google Meet), com duração média de 50 minutos, garantindo conforto, pontualidade e sigilo.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border-2 border-[#272727] overflow-hidden">
+          <button type="button" data-faq-toggle="faq2" class="w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#272727] flex items-center justify-between">
+            <span>2. Qual a diferença da Terapia Cognitivo-Comportamental (TCC) e DBT?</span>
+            <span id="icon-faq2" class="text-lg font-extrabold">+</span>
+          </button>
+          <div id="faq2" class="hidden px-5 pb-4 text-xs sm:text-sm text-neutral-700 leading-relaxed">
+            A TCC trabalha a relação entre seus pensamentos, emoções e comportamentos de forma estruturada, colaborativa e focada em metas. Já a Terapia Comportamental Dialética (DBT) expande a TCC com habilidades profundas de regulação emocional, tolerância ao mal-estar e efetividade interpessoal — excelente para emoções intensas e transtornos de humor ou personalidade.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border-2 border-[#272727] overflow-hidden">
+          <button type="button" data-faq-toggle="faq3" class="w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#272727] flex items-center justify-between">
+            <span>3. Emite recibo (Receita Saúde) e declaração para reembolso de plano de saúde?</span>
+            <span id="icon-faq3" class="text-lg font-extrabold">+</span>
+          </button>
+          <div id="faq3" class="hidden px-5 pb-4 text-xs sm:text-sm text-neutral-700 leading-relaxed">
+            Sim. Os atendimentos particulares contam com emissão oficial do recibo eletrônico pelo sistema Receita Saúde e documentação comprobatória com registro CRP 02/31623 para solicitação de reembolso junto ao seu convênio médico ou dedução no Imposto de Renda.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border-2 border-[#272727] overflow-hidden">
+          <button type="button" data-faq-toggle="faq4" class="w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#272727] flex items-center justify-between">
+            <span>4. Como funcionam os atendimentos infantis e sociais?</span>
+            <span id="icon-faq4" class="text-lg font-extrabold">+</span>
+          </button>
+          <div id="faq4" class="hidden px-5 pb-4 text-xs sm:text-sm text-neutral-700 leading-relaxed">
+            O atendimento clínico infantil (incluindo acompanhamento especializado para crianças autistas / TEA) é realizado presencialmente na Clínica Elo Multiterapias. Além do consultório particular on-line, Luiza também dedica horários para atendimento social acessível pelo Instituto Entrelaçadas e plataforma PsyMeet.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-[#272727] text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-neutral-800 items-center">
+        <div class="md:col-span-5 space-y-2">
+          <div class="flex items-center gap-3">
+            <img src="./assets/Foto-Ilustracao-Perfil01.webp" alt="Luiza Wolpert" class="w-12 h-12 rounded-full object-cover border border-[#B6EFE0]" />
+            <div>
+              <div class="font-display font-bold text-lg text-white">Ana Luiza Wolpert Alves</div>
+              <div class="text-xs text-[#B6EFE0]">Psicóloga Clínica • CRP 02/31623</div>
+            </div>
+          </div>
+          <p class="text-xs text-neutral-400 max-w-sm pt-1">
+            Saúde mental com acolhimento ético, escuta qualificada e prática baseada em evidências. Camaragibe / Recife - PE.
+          </p>
+        </div>
+
+        <div class="md:col-span-4 space-y-1.5 text-xs text-neutral-300">
+          <div class="font-bold text-white uppercase tracking-wider mb-2">Canais Diretos</div>
+          <div>📸 Instagram: <a href="https://www.instagram.com/psiluizawolpertt/" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#B6EFE0]">@psiluizawolpertt</a></div>
+          <div>📞 WhatsApp: <a href="https://wa.me/5581994740304" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#B6EFE0]">(81) 99474-0304</a></div>
+          <div>✉️ E-mail: <a href="mailto:luizawolpert13@gmail.com" class="underline hover:text-[#B6EFE0]">luizawolpert13@gmail.com</a></div>
+          <div>🔗 LinkedIn: <a href="https://www.linkedin.com/in/luiza-wolpert-a967a7307/" target="_blank" rel="noopener noreferrer" class="underline hover:text-[#B6EFE0]">/in/luiza-wolpert-a967a7307</a></div>
+        </div>
+
+        <div class="md:col-span-3 flex flex-col gap-2">
+          <a href="#agendamento" class="py-2.5 px-4 rounded-xl bg-[#A7D4C7] hover:bg-[#B6EFE0] text-[#111318] text-xs font-extrabold text-center transition">
+            💬 Agendar Consulta
+          </a>
+          <p class="text-[11px] text-neutral-400 leading-snug">
+            <strong>Atenção:</strong> Este site não realiza atendimento de urgência ou emergência. Em caso de crise aguda, ligue gratuitamente para o <strong>188 (CVV)</strong> ou procure o serviço de saúde mais próximo.
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-wrap items-center justify-between gap-2 text-xs text-neutral-500">
+        <span>© 2026 Psicóloga Luiza Wolpert (CRP 02/31623). Todos os direitos reservados.</span>
+        <span>Atendimento Psicológico Ético e Baseado em Evidências (CFP / CRP-02)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT DE INTERATIVIDADE DO PACIENTE -->
+  <script>
+    (function() {
+      // 1. Menu Mobile
+      var mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      var mobileMenuPanel = document.getElementById('mobileMenuPanel');
+      if (mobileMenuBtn && mobileMenuPanel) {
+        mobileMenuBtn.addEventListener('click', function() {
+          mobileMenuPanel.classList.toggle('hidden');
+        });
+        var mobileLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            mobileMenuPanel.classList.add('hidden');
+          });
+        });
+      }
+
+      // 2. Escolha do Tema da Marca (Verde / Lilás / Rosa) + Modo Escuro & Escurecimento
+      var themeBtns = document.querySelectorAll('[data-set-theme]');
+      var cardFrontImg = document.getElementById('cardFrontImg');
+      var cardFrontMap = {
+        verde: "./assets/Cartao-Verde-Frente.webp",
+        rosa: "./assets/Cartao-Rosa-Frente.webp",
+        roxo: "./assets/Cartao-Roxo-Frente.webp"
+      };
+
+      function applyTheme(theme) {
+        if (!theme) return;
+        document.body.setAttribute('data-theme', theme);
+        themeBtns.forEach(function(btn) {
+          if (btn.getAttribute('data-set-theme') === theme) {
+            btn.classList.add('ring-2', 'ring-white', 'scale-105');
+            btn.classList.remove('opacity-80');
+          } else {
+            btn.classList.remove('ring-2', 'ring-white', 'scale-105');
+            btn.classList.add('opacity-80');
+          }
+        });
+        if (cardFrontImg && cardFrontMap[theme]) {
+          cardFrontImg.src = cardFrontMap[theme];
+          document.querySelectorAll('.card-color-btn').forEach(function(b) {
+            if (b.getAttribute('data-card-color') === theme) b.classList.add('ring-2', 'ring-[#272727]');
+            else b.classList.remove('ring-2', 'ring-[#272727]');
+          });
+        }
+        try {
+          localStorage.setItem('psi_luiza_theme', theme);
+        } catch (e) {}
+      }
+
+      themeBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          applyTheme(btn.getAttribute('data-set-theme'));
+        });
+      });
+
+      var isDark = false;
+      var darkModeToggleTop = document.getElementById('darkModeToggleTop');
+      var darkModeToggleNav = document.getElementById('darkModeToggleNav');
+      var darkModeIconTop = document.getElementById('darkModeIconTop');
+      var darkModeLabelTop = document.getElementById('darkModeLabelTop');
+      var darkModeIconNav = document.getElementById('darkModeIconNav');
+      var darkModeLabelNav = document.getElementById('darkModeLabelNav');
+      var dimmerRangeTop = document.getElementById('dimmerRangeTop');
+
+      function applyDarkMode(darkState) {
+        isDark = !!darkState;
+        document.body.setAttribute('data-dark', isDark ? 'true' : 'false');
+        if (darkModeIconTop) darkModeIconTop.textContent = isDark ? '☀️' : '🌙';
+        if (darkModeLabelTop) darkModeLabelTop.textContent = isDark ? 'Modo Claro' : 'Modo Escuro';
+        if (darkModeIconNav) darkModeIconNav.textContent = isDark ? '☀️' : '🌙';
+        if (darkModeLabelNav) darkModeLabelNav.textContent = isDark ? 'Clarear' : 'Escurecer';
+        try {
+          localStorage.setItem('psi_luiza_dark', isDark ? 'true' : 'false');
+        } catch (e) {}
+      }
+
+      if (darkModeToggleTop) {
+        darkModeToggleTop.addEventListener('click', function() {
+          applyDarkMode(!isDark);
+        });
+      }
+      if (darkModeToggleNav) {
+        darkModeToggleNav.addEventListener('click', function() {
+          applyDarkMode(!isDark);
+        });
+      }
+
+      if (dimmerRangeTop) {
+        dimmerRangeTop.addEventListener('input', function() {
+          var val = parseInt(dimmerRangeTop.value, 10) || 0;
+          document.documentElement.style.setProperty('--dim-opacity', (val / 100).toFixed(2));
+        });
+      }
+
+      try {
+        var savedTheme = localStorage.getItem('psi_luiza_theme');
+        if (savedTheme) applyTheme(savedTheme);
+        var savedDark = localStorage.getItem('psi_luiza_dark');
+        if (savedDark === 'true') applyDarkMode(true);
+      } catch (e) {}
+
+      // 3. Alternador de Retrato na Seção Inicial (Foto Real / Ilustração / Com Gatinho)
+      var heroPortraitImg = document.getElementById('heroPortraitImg');
+      var portraitModeBadge = document.getElementById('portraitModeBadge');
+      var portraitBtns = document.querySelectorAll('[data-portrait]');
+      var portraitData = {
+        real: {
+          src: "./assets/Luiza-Real-Brilho-Borda.webp",
+          badge: "✨ Psicoterapia Individual & Acolhimento"
+        },
+        ilustra: {
+          src: "./assets/Luiza-Ilustracao-Borda.webp",
+          badge: "🎨 Versão: Ilustração Autoral"
+        },
+        avatar: {
+          src: "./assets/Foto-Ilustracao-Perfil01.webp",
+          badge: "🐾 Versão: Avatar com Gatinho"
+        }
+      };
+
+      portraitBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var mode = btn.getAttribute('data-portrait');
+          var info = portraitData[mode];
+          if (info && heroPortraitImg && portraitModeBadge) {
+            heroPortraitImg.src = info.src;
+            portraitModeBadge.textContent = info.badge;
+          }
+          portraitBtns.forEach(function(b) {
+            if (b.getAttribute('data-portrait') === mode) {
+              b.classList.add('ui-tab-active');
+            } else {
+              b.classList.remove('ui-tab-active');
+            }
+          });
+        });
+      });
+
+      // 4. Consultório Virtual Interativo (6 Elementos Terapêuticos)
+      var roomItems = {
+        sofa: {
+          tag: "Pilar 1 • Acolhimento Clínico",
+          title: "O Sofá Lilás: Um lugar onde você pode existir sem filtros",
+          desc: "Na psicoterapia, o primeiro passo é construir uma aliança terapêutica segura. O sofá simboliza a escuta ativa, ética e livre de julgamentos, onde adolescentes e adultos encontram espaço para nomear angústias, compreender padrões emocionais e construir autonomia.",
+          img: "./assets/Sofa-Default.webp",
+          bullets: [
+            "Sessões individuais de 50 minutos com sigilo profissional absoluto (Código de Ética do Psicólogo).",
+            "Ritmo respeitoso: você nunca é forçado(a) a falar sobre o que ainda não se sente pronto(a).",
+            "Metas terapêuticas construídas em conjunto desde os primeiros encontros."
+          ]
+        },
+        estante: {
+          tag: "Pilar 2 • Prática Baseada em Evidências",
+          title: "A Estante Científica: TCC, DBT e Atualização Constante",
+          desc: "Cada livro e planta na estante representa o compromisso com uma Psicologia baseada em evidências científicas. Em especialização em Terapia Cognitivo-Comportamental (PUCRS) e com foco em Transtornos de Humor, Ansiedade e Personalidade.",
+          img: "./assets/Estante-Default.webp",
+          bullets: [
+            "Identificação de crenças centrais, pensamentos automáticos e distorções cognitivas.",
+            "Plano de ação prático entre sessões para consolidar novas habilidades emocionais.",
+            "Formação contínua pelo Instituto Fratelli, UPE, PUCRS e UNICEF/UNA-SUS."
+          ]
+        },
+        janela: {
+          tag: "Pilar 3 • Terapia Sem Fronteiras",
+          title: "A Janela Aberta: Atendimento On-line e Presencial Infantil",
+          desc: "A janela aberta para a cidade e o sol simboliza novas perspectivas e a possibilidade de fazer terapia de onde você estiver. O atendimento on-line via Google Meet acolhe pacientes em todo o Brasil e brasileiros no exterior.",
+          img: "./assets/Janela-Default.webp",
+          bullets: [
+            "Atendimento On-line (Google Meet) para adolescentes e adultos com total privacidade.",
+            "Atendimento Clínico Infantil presencial na Clínica Elo Multiterapias (foco em TEA/Autismo).",
+            "Horários planejados com lembretes e emissão de documentação para reembolso."
+          ]
+        },
+        espelho: {
+          tag: "Pilar 4 • Autoconhecimento & Autoestima",
+          title: "O Espelho: Reconhecer sua história com autocompaixão",
+          desc: "Olhar para si mesmo(a) muitas vezes dói quando estamos acostumados à autocrítica severa. Na terapia, o espelho deixa de ser um tribunal e passa a ser um instrumento de autoconhecimento, validação emocional e construção de limites saudáveis.",
+          img: "./assets/Espelho-Default.webp",
+          bullets: [
+            "Fortalecimento da autoestima e redução do perfeccionismo paralisante.",
+            "Desenvolvimento de assertividade para dizer 'não' sem culpa excessiva.",
+            "Trabalho focado na identidade de jovens, adolescentes e adultos em transição."
+          ]
+        },
+        flores: {
+          tag: "Pilar 5 • Florescimento & Prevenção",
+          title: "O Vaso de Rosas: Cuidar da saúde mental é cultivo diário",
+          desc: "Assim como uma planta precisa de água e luz na medida certa, nossa saúde emocional floresce quando construímos rotinas sustentáveis de autocuidado, regulação do sono, engajamento saudável no trabalho e relações nutritivas.",
+          img: "./assets/Flores-Default.webp",
+          bullets: [
+            "Prevenção de recaídas e construção de autonomia emocional para o dia a dia.",
+            "Estratégias de manejo de estresse, sobrecarga e saúde emocional no trabalho.",
+            "Acompanhamento próximo em fases de luto, mudanças de carreira ou recomeços."
+          ]
+        },
+        gatos: {
+          tag: "Pilar 6 • Leveza, Presença e Aconchego",
+          title: "Os Gatinhos do Consultório: Acolher o descanso sem culpa",
+          desc: "Os gatinhos lembram que pausar, espreguiçar e respeitar seus próprios limites biológicos e emocionais não é preguiça — é cuidado legítimo com a sua saúde mental.",
+          img: "./assets/Gato-Preguica-Default.webp",
+          bullets: [
+            "Espaço terapêutico humano, caloroso e livre de formalidades frias ou distantes.",
+            "Acolhimento empático para dias em que tudo parece pesado demais.",
+            "Um lembrete gentil para desacelerar e respeitar o seu próprio ritmo em cada sessão."
+          ]
+        }
+      };
+
+      var roomOrder = ['sofa', 'estante', 'janela', 'espelho', 'flores', 'gatos'];
+      var currentRoomKey = 'sofa';
+      var exploredSet = { sofa: true };
+
+      var roomDetailTag = document.getElementById('roomDetailTag');
+      var roomDetailThumb = document.getElementById('roomDetailThumb');
+      var roomDetailTitle = document.getElementById('roomDetailTitle');
+      var roomDetailDesc = document.getElementById('roomDetailDesc');
+      var roomDetailBullets = document.getElementById('roomDetailBullets');
+      var roomClickCounter = document.getElementById('roomClickCounter');
+
+      function selectRoomItem(key) {
+        if (!roomItems[key]) return;
+        currentRoomKey = key;
+        exploredSet[key] = true;
+        var item = roomItems[key];
+
+        if (roomDetailTag) roomDetailTag.textContent = item.tag;
+        if (roomDetailThumb) roomDetailThumb.src = item.img;
+        if (roomDetailTitle) roomDetailTitle.textContent = item.title;
+        if (roomDetailDesc) roomDetailDesc.textContent = item.desc;
+        if (roomDetailBullets) {
+          roomDetailBullets.innerHTML = item.bullets.map(function(b) {
+            return '<li class="flex items-start gap-2"><span class="text-emerald-600 font-bold">✓</span> <span>' + b + '</span></li>';
+          }).join('');
+        }
+        if (roomClickCounter) {
+          var count = Object.keys(exploredSet).length;
+          roomClickCounter.textContent = count + '/6 explorados';
+        }
+
+        document.querySelectorAll('.room-tab-btn').forEach(function(btn) {
+          if (btn.getAttribute('data-room-item') === key) {
+            btn.classList.add('ui-tab-active');
+          } else {
+            btn.classList.remove('ui-tab-active');
+          }
+        });
+
+        document.querySelectorAll('.room-hotspot').forEach(function(hs) {
+          if (hs.getAttribute('data-room-item') === key) {
+            hs.classList.add('hotspot-active');
+          } else {
+            hs.classList.remove('hotspot-active');
+          }
+        });
+      }
+
+      document.querySelectorAll('[data-room-item]').forEach(function(el) {
+        el.addEventListener('click', function() {
+          selectRoomItem(el.getAttribute('data-room-item'));
+        });
+      });
+
+      var nextRoomItemBtn = document.getElementById('nextRoomItemBtn');
+      if (nextRoomItemBtn) {
+        nextRoomItemBtn.addEventListener('click', function() {
+          var idx = roomOrder.indexOf(currentRoomKey);
+          var nextKey = roomOrder[(idx + 1) % roomOrder.length];
+          selectRoomItem(nextKey);
+        });
+      }
+
+      var catPoses = [
+        "./assets/Gato-Preguica-Default.webp",
+        "./assets/Gato-Lambendo-Default.webp",
+        "./assets/Gato-Deitado-Default.webp"
+      ];
+      var catPoseIdx = 0;
+      var cycleCatPoseBtn = document.getElementById('cycleCatPoseBtn');
+      var roomCatImg = document.getElementById('roomCatImg');
+      if (cycleCatPoseBtn && roomCatImg) {
+        cycleCatPoseBtn.addEventListener('click', function() {
+          catPoseIdx = (catPoseIdx + 1) % catPoses.length;
+          roomCatImg.src = catPoses[catPoseIdx];
+          roomItems.gatos.img = catPoses[catPoseIdx];
+          selectRoomItem('gatos');
+        });
+      }
+
+      // 5. Triagem Interativa & Gerador de Mensagem para Agendamento
+      var selectedAudience = "Adulto (On-line)";
+      var selectedTopics = ["Ansiedade, preocupações excessivas ou pânico"];
+      var patientNameInput = document.getElementById('patientNameInput');
+      var shiftSelect = document.getElementById('shiftSelect');
+      var whatsappPreviewText = document.getElementById('whatsappPreviewText');
+      var sendWhatsappBtn = document.getElementById('sendWhatsappBtn');
+      var sendEmailBtn = document.getElementById('sendEmailBtn');
+      var selectedTopicsCount = document.getElementById('selectedTopicsCount');
+      var triageAdviceText = document.getElementById('triageAdviceText');
+
+      var adviceMap = {
+        "Ansiedade, preocupações excessivas ou pânico": "Na Terapia Cognitivo-Comportamental, mapeamos os pensamentos automáticos e gatilhos de ansiedade com ferramentas práticas de regulação e exposição gradual.",
+        "Oscilações de humor, desânimo ou sobrecarga": "Trabalhamos com ativação comportamental gradual, reestruturação de pensamentos disfuncionais e acolhimento do seu ritmo diário.",
+        "Regulação emocional intensa e impulsividade (foco TCC/DBT)": "Combinamos estratégias da TCC e princípios da Terapia Comportamental Dialética (DBT) para tolerância ao mal-estar e regulação de emoções intensas.",
+        "Autoconhecimento, autoestima e imposição de limites": "Fortalecemos sua leitura sobre si mesmo(a), reduzindo a autocrítica punitiva e construindo relações mais autênticas e assertivas.",
+        "Saúde emocional no trabalho, burnout e carreira": "Com capacitações específicas pela PUCRS em Saúde Emocional e Engajamento no Trabalho, auxiliamos no manejo do estresse ocupacional e limites saudáveis.",
+        "Desenvolvimento infantil e suporte no espectro autista (TEA)": "No atendimento clínico infantil presencial na Clínica Elo Multiterapias, utilizamos intervenções lúdicas e adaptadas às necessidades individuais da criança.",
+        "Atendimento social acessível (PsyMeet / Instituto Entrelaçadas)": "Através do Instituto Entrelaçadas e da PsyMeet, oferecemos escuta qualificada e ética com valores acessíveis para ampliar o acesso à saúde mental."
+      };
+
+      function updateWhatsappBuilder() {
+        var namePart = (patientNameInput && patientNameInput.value.trim())
+          ? "Meu nome é " + patientNameInput.value.trim() + "."
+          : "Olá, Luiza! Tudo bem?";
+        var shift = shiftSelect ? shiftSelect.value : "Flexível";
+        var topicsStr = selectedTopics.length > 0
+          ? selectedTopics.join("; ")
+          : "Autoconhecimento e cuidado com a saúde emocional";
+
+        var msg = namePart + " Vim pelo seu site (@psiluizawolpertt) e gostaria de saber informações sobre agendamento de psicoterapia.\n\n" +
+          "• Modalidade/Público: " + selectedAudience + "\n" +
+          "• Foco principal: " + topicsStr + "\n" +
+          "• Turno de preferência: " + shift + "\n\n" +
+          "Como está sua disponibilidade de horários?";
+
+        if (whatsappPreviewText) {
+          whatsappPreviewText.value = msg;
+        }
+        syncDispatchLinks(msg);
+      }
+
+      function syncDispatchLinks(msgText) {
+        var encoded = encodeURIComponent(msgText);
+        if (sendWhatsappBtn) {
+          sendWhatsappBtn.href = "https://wa.me/5581994740304?text=" + encoded;
+        }
+        if (sendEmailBtn) {
+          sendEmailBtn.href = "mailto:luizawolpert13@gmail.com?subject=" + encodeURIComponent("Agendamento de Psicoterapia - Luiza Wolpert") + "&body=" + encoded;
+        }
+      }
+
+      if (whatsappPreviewText) {
+        whatsappPreviewText.addEventListener('input', function() {
+          syncDispatchLinks(whatsappPreviewText.value);
+        });
+      }
+      if (patientNameInput) patientNameInput.addEventListener('input', updateWhatsappBuilder);
+      if (shiftSelect) shiftSelect.addEventListener('change', updateWhatsappBuilder);
+
+      document.querySelectorAll('.audience-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          selectedAudience = btn.getAttribute('data-audience');
+          document.querySelectorAll('.audience-btn').forEach(function(b) {
+            if (b === btn) {
+              b.classList.add('ui-chip-selected');
+            } else {
+              b.classList.remove('ui-chip-selected');
+            }
+          });
+          updateWhatsappBuilder();
+        });
+      });
+
+      document.querySelectorAll('.topic-chip').forEach(function(chip) {
+        chip.addEventListener('click', function() {
+          var topic = chip.getAttribute('data-topic');
+          var idx = selectedTopics.indexOf(topic);
+          if (idx >= 0) {
+            if (selectedTopics.length > 1) selectedTopics.splice(idx, 1);
+          } else {
+            selectedTopics.push(topic);
+          }
+          document.querySelectorAll('.topic-chip').forEach(function(c) {
+            var t = c.getAttribute('data-topic');
+            if (selectedTopics.indexOf(t) >= 0) {
+              c.classList.add('ui-chip-selected');
+            } else {
+              c.classList.remove('ui-chip-selected');
+            }
+          });
+          if (selectedTopicsCount) {
+            selectedTopicsCount.textContent = selectedTopics.length + (selectedTopics.length === 1 ? " selecionado" : " selecionados");
+          }
+          var lastTopic = selectedTopics[selectedTopics.length - 1];
+          if (triageAdviceText && adviceMap[lastTopic]) {
+            triageAdviceText.textContent = adviceMap[lastTopic];
+          }
+          updateWhatsappBuilder();
+        });
+      });
+
+      var copyMessageBtn = document.getElementById('copyMessageBtn');
+      var copyFeedbackToast = document.getElementById('copyFeedbackToast');
+      if (copyMessageBtn && whatsappPreviewText) {
+        copyMessageBtn.addEventListener('click', function() {
+          whatsappPreviewText.select();
+          try {
+            document.execCommand('copy');
+          } catch (e) {}
+          if (copyFeedbackToast) {
+            copyFeedbackToast.classList.remove('hidden');
+            setTimeout(function() {
+              copyFeedbackToast.classList.add('hidden');
+            }, 3000);
+          }
+        });
+      }
+
+      updateWhatsappBuilder();
+
+      // 6. Exercício de Respiração Guiada
+      var breathRunning = false;
+      var breathInterval = null;
+      var breathMode = "446";
+      var breathCycles = 0;
+      var audioEnabled = true;
+      var audioCtx = null;
+
+      var toggleBreathBtn = document.getElementById('toggleBreathBtn');
+      var toggleAudioBtn = document.getElementById('toggleAudioBtn');
+      var breathCircle = document.getElementById('breathCircle');
+      var breathInstruction = document.getElementById('breathInstruction');
+      var breathTimerText = document.getElementById('breathTimerText');
+      var breathCyclesBadge = document.getElementById('breathCyclesBadge');
+      var modeCalmBtn = document.getElementById('modeCalmBtn');
+      var modeBoxBtn = document.getElementById('modeBoxBtn');
+
+      function playGentleTone(freq) {
+        if (!audioEnabled) return;
+        try {
+          if (!audioCtx) {
+            var AudioContextClass = window.AudioContext || window.webkitAudioContext;
+            if (AudioContextClass) audioCtx = new AudioContextClass();
+          }
+          if (!audioCtx) return;
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+          var osc = audioCtx.createOscillator();
+          var gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+          gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.05, audioCtx.currentTime + 0.15);
+          gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.2);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start();
+          osc.stop(audioCtx.currentTime + 1.25);
+        } catch (e) {}
+      }
+
+      function stopBreathing() {
+        breathRunning = false;
+        if (breathInterval) {
+          clearInterval(breathInterval);
+          breathInterval = null;
+        }
+        if (toggleBreathBtn) toggleBreathBtn.textContent = "▶️ Iniciar Respiração Guiada";
+        if (breathCircle) {
+          breathCircle.style.transform = "scale(1)";
+          breathCircle.style.backgroundColor = "var(--brand-surface)";
+        }
+        if (breathInstruction) breathInstruction.textContent = "Pausa concluída";
+        if (breathTimerText) breathTimerText.textContent = "Toque em Iniciar quando quiser";
+      }
+
+      function startBreathing() {
+        if (breathInterval) clearInterval(breathInterval);
+        breathRunning = true;
+        if (toggleBreathBtn) toggleBreathBtn.textContent = "⏹️ Pausar Exercício";
+
+        var phases = breathMode === "446"
+          ? [
+              { label: "Inspire suavemente...", secs: 4, scale: "scale(1.26)", bg: "var(--brand-primary-soft)", tone: 432 },
+              { label: "Segure o ar...", secs: 4, scale: "scale(1.26)", bg: "var(--brand-secondary-soft)", tone: 528 },
+              { label: "Solte devagar...", secs: 6, scale: "scale(0.92)", bg: "var(--brand-surface)", tone: 396 }
+            ]
+          : [
+              { label: "Inspire (1, 2, 3, 4)...", secs: 4, scale: "scale(1.25)", bg: "var(--brand-primary-soft)", tone: 440 },
+              { label: "Segure cheio...", secs: 4, scale: "scale(1.25)", bg: "var(--brand-secondary-soft)", tone: 528 },
+              { label: "Expire devagar...", secs: 4, scale: "scale(0.92)", bg: "var(--brand-surface)", tone: 396 },
+              { label: "Pulmões em repouso...", secs: 4, scale: "scale(0.92)", bg: "var(--brand-surface)", tone: 340 }
+            ];
+
+        var phaseIdx = 0;
+        var remaining = phases[0].secs;
+
+        function applyPhase(p) {
+          if (breathInstruction) breathInstruction.textContent = p.label;
+          if (breathCircle) {
+            breathCircle.style.transform = p.scale;
+            breathCircle.style.backgroundColor = p.bg;
+          }
+          playGentleTone(p.tone);
+        }
+
+        applyPhase(phases[0]);
+        if (breathTimerText) breathTimerText.textContent = remaining + " segundos";
+
+        breathInterval = setInterval(function() {
+          remaining -= 1;
+          if (remaining <= 0) {
+            phaseIdx = (phaseIdx + 1) % phases.length;
+            if (phaseIdx === 0) {
+              breathCycles += 1;
+              if (breathCyclesBadge) breathCyclesBadge.textContent = "Ciclos concluídos: " + breathCycles;
+            }
+            remaining = phases[phaseIdx].secs;
+            applyPhase(phases[phaseIdx]);
+          }
+          if (breathTimerText) breathTimerText.textContent = remaining + " segundos";
+        }, 1000);
+      }
+
+      if (toggleBreathBtn) {
+        toggleBreathBtn.addEventListener('click', function() {
+          if (breathRunning) stopBreathing();
+          else startBreathing();
+        });
+      }
+
+      if (toggleAudioBtn) {
+        toggleAudioBtn.addEventListener('click', function() {
+          audioEnabled = !audioEnabled;
+          toggleAudioBtn.textContent = audioEnabled ? "🔔 Som Suave: Ativado" : "🔕 Som Suave: Mudo";
+        });
+      }
+
+      [modeCalmBtn, modeBoxBtn].forEach(function(btn) {
+        if (!btn) return;
+        btn.addEventListener('click', function() {
+          breathMode = btn.getAttribute('data-breath-mode');
+          if (modeCalmBtn && modeBoxBtn) {
+            if (breathMode === "446") {
+              modeCalmBtn.classList.add('ui-tab-active');
+              modeBoxBtn.classList.remove('ui-tab-active');
+            } else {
+              modeBoxBtn.classList.add('ui-tab-active');
+              modeCalmBtn.classList.remove('ui-tab-active');
+            }
+          }
+          if (breathRunning) startBreathing();
+        });
+      });
+
+      // 7. Filtro de Capacitações
+      document.querySelectorAll('.cert-filter-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var cat = btn.getAttribute('data-cert-filter');
+          document.querySelectorAll('.cert-filter-btn').forEach(function(b) {
+            if (b === btn) {
+              b.classList.add('ui-tab-active');
+            } else {
+              b.classList.remove('ui-tab-active');
+            }
+          });
+          document.querySelectorAll('.cert-item').forEach(function(item) {
+            if (cat === 'all' || item.getAttribute('data-cert-cat') === cat) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // 8. Cartão de Visita 3D & Download de Contato (.vcf)
+      var isCardFlipped = false;
+      var businessCardInner = document.getElementById('businessCardInner');
+      var businessCard3DStage = document.getElementById('businessCard3DStage');
+      var flipCardBtn = document.getElementById('flipCardBtn');
+
+      function toggleCardFlip() {
+        isCardFlipped = !isCardFlipped;
+        if (businessCardInner) {
+          if (isCardFlipped) businessCardInner.classList.add('rotate-y-180');
+          else businessCardInner.classList.remove('rotate-y-180');
+        }
+      }
+
+      if (businessCard3DStage) businessCard3DStage.addEventListener('click', toggleCardFlip);
+      if (flipCardBtn) flipCardBtn.addEventListener('click', toggleCardFlip);
+
+      document.querySelectorAll('.card-color-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var c = btn.getAttribute('data-card-color');
+          if (cardFrontImg && cardFrontMap[c]) {
+            cardFrontImg.src = cardFrontMap[c];
+          }
+          if (isCardFlipped) toggleCardFlip();
+          document.querySelectorAll('.card-color-btn').forEach(function(b) {
+            if (b === btn) b.classList.add('ring-2', 'ring-[#272727]');
+            else b.classList.remove('ring-2', 'ring-[#272727]');
+          });
+        });
+      });
+
+      var downloadVcardBtn = document.getElementById('downloadVcardBtn');
+      if (downloadVcardBtn) {
+        downloadVcardBtn.addEventListener('click', function() {
+          var vcf = [
+            "BEGIN:VCARD",
+            "VERSION:3.0",
+            "N:Wolpert Alves;Ana Luiza;;;",
+            "FN:Psicóloga Luiza Wolpert (CRP 02/31623)",
+            "TITLE:Psicóloga Clínica - CRP 02/31623 (TCC)",
+            "TEL;TYPE=CELL,VOICE:+5581994740304",
+            "EMAIL;TYPE=PREF,INTERNET:luizawolpert13@gmail.com",
+            "URL:https://www.instagram.com/psiluizawolpertt/",
+            "NOTE:Atendimento Psicológico On-line (Adolescentes e Adultos) e Presencial Infantil.",
+            "END:VCARD"
+          ].join("\r\n");
+          var blob = new Blob([vcf], { type: "text/vcard;charset=utf-8" });
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = "Luiza_Wolpert_Psicologa.vcf";
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
+        });
+      }
+
+      // 9. Acordeão de Dúvidas Frequentes (FAQ)
+      document.querySelectorAll('[data-faq-toggle]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var targetId = btn.getAttribute('data-faq-toggle');
+          var content = document.getElementById(targetId);
+          var icon = document.getElementById('icon-' + targetId);
+          if (content) {
+            var isHidden = content.classList.contains('hidden');
+            if (isHidden) {
+              content.classList.remove('hidden');
+              if (icon) icon.textContent = '−';
+            } else {
+              content.classList.add('hidden');
+              if (icon) icon.textContent = '+';
+            }
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
